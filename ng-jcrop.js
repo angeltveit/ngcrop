@@ -336,13 +336,12 @@
          */
         $scope.init = function(src){
             $scope.destroy();
-
+            var elem = $($element[0])
             $scope.initMainImage(src);
-
-            $scope.imageWrapper = $element.find('.ng-jcrop-image-wrapper');
+            $scope.imageWrapper = elem.find('.ng-jcrop-image-wrapper');
             $scope.imageWrapper.empty().append($scope.mainImg);
 
-            $scope.previewImg = $element.find('.ng-jcrop-thumbnail');
+            $scope.previewImg = elem.find('.ng-jcrop-thumbnail');
             $scope.previewImg.attr('src', src);
         };
 
