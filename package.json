@@ -3,7 +3,12 @@
   "version": "2.1.2",
   "description": "ng-jcrop",
   "main": "ng-jcrop.js",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "*",
+     "angular": "*",
+     "jcrop-0.9.12": "*",
+     "angular-mocks": "*"
+  },
   "devDependencies": {
     "bower": "^1.6.5",
     "coveralls": "^2.11.1",
@@ -18,7 +23,6 @@
     "phantomjs": "^1.9.18"
   },
   "scripts": {
-    "postinstall": "bower install",
     "test": "karma start",
     "citest": "karma start karma.travis.conf.js",
     "serve": "http-server"
